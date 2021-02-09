@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.text-shadow {
+  text-shadow: 3px 3px 5px #181717;
+}
+.input {
+  transition: border 0.2s ease-in-out;
+  min-width: 280px;
+}
+
+.input:focus + .label,
+.input:active + .label,
+.input.filled + .label {
+  font-size: 0.75rem;
+  transition: all 0.2s ease-out;
+  top: -0.1rem;
+  color: #000000;
+}
